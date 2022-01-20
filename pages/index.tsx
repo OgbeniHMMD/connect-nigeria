@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
+import HomeTopNavigation from "../components/home/HomeTopNavigation";
+import TopNavigation from "../components/home/HomeTopNavigation";
 
 export default function HomePage() {
   return (
@@ -14,7 +16,15 @@ export default function HomePage() {
         <section className="flex flex-col h-screen justify-between">
           <header className="border-b">
             <div className="container flex mx-auto w-full p-4 justify-between items-center lg:py-8">
-              <h1 className="font-bold text-3xl underline">Hello world!</h1>
+              <Link href="/">
+                <a className="">
+                  <img
+                    src="/images/logo.png"
+                    className="h-auto w-58"
+                    alt="logo"
+                  />
+                </a>
+              </Link>
               <div className="font-medium text-xl text-primary italic hidden md:block">
                 Bringing you our products and deals
               </div>
@@ -25,19 +35,9 @@ export default function HomePage() {
               </div>
             </div>
           </header>
-          <nav className="bg-secondary font-bold text-white p-4">
-            <div className="container divide-white flex mx-auto divide-x-2 justify-evenly">
-              {[...new Array(5)].map((el, i) => (
-                <Link href="#" key={i}>
-                  <a className="w-full hover:underline">
-                    <div className="rounded text-center text-sm w-full lg:text-lg lg:p-2">
-                      ccc
-                    </div>
-                  </a>
-                </Link>
-              ))}
-            </div>
-          </nav>
+
+          <HomeTopNavigation />
+
           <section
             className="bg-no-repeat bg-cover bg-fixed flex h-full p-8 justify-center items-end lg:p-24"
             style={{ backgroundImage: `url(/images/hero-bg.jpeg)` }}
@@ -48,7 +48,7 @@ export default function HomePage() {
           </section>
         </section>
 
-        <div className="py-12">
+        <div id="cars" className="py-12">
           <div className="container mx-auto">
             <nav className="flex justify-between items-center">
               <h2 className="font-bold text-lg uppercase lg:text-2xl">Cars</h2>
