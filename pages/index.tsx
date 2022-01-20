@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
 
 export default function HomePage() {
   return (
@@ -15,19 +13,19 @@ export default function HomePage() {
       <main className="bg-white">
         <section className="flex flex-col h-screen justify-between">
           <header className="border-b">
-            <div className="container flex mx-auto w-full p-4 justify-between items-center">
+            <div className="container flex mx-auto w-full p-4 justify-between items-center lg:py-8">
               <h1 className="font-bold text-3xl underline">Hello world!</h1>
-              <div className="font-medium text-xl text-[#87C121] italic hidden md:block">
+              <div className="font-medium text-xl text-primary italic hidden md:block">
                 Bringing you our products and deals
               </div>
               <div>
-                <button className="rounded font-bold bg-[#87C121] text-lg text-white py-2 px-8 uppercase lg:py-4 lg:px-12">
+                <button className="bg-primary rounded font-bold text-sm text-white py-2 px-8 uppercase md:text-base lg:py-4 lg:px-12">
                   List now
                 </button>
               </div>
             </div>
           </header>
-          <nav className="font-bold bg-[#FF8300] text-white p-4">
+          <nav className="bg-secondary font-bold text-white p-4">
             <div className="container divide-white flex mx-auto divide-x-2 justify-evenly">
               {[...new Array(5)].map((el, i) => (
                 <Link href="#" key={i}>
@@ -44,8 +42,8 @@ export default function HomePage() {
             className="bg-no-repeat bg-cover bg-fixed flex h-full p-8 justify-center items-end lg:p-24"
             style={{ backgroundImage: `url(/images/hero-bg.jpeg)` }}
           >
-            <button className="rounded font-bold bg-[#87C121] text-lg text-white py-2 px-8 uppercase md:text-lg md:py-4 md:px-12">
-              List now
+            <button className="bg-primary rounded font-bold text-sm text-white py-2 px-8 uppercase md:text-base md:text-lg md:py-4 md:px-12">
+              Shop now
             </button>
           </section>
         </section>
@@ -54,7 +52,7 @@ export default function HomePage() {
           <div className="container mx-auto">
             <nav className="flex justify-between items-center">
               <h2 className="font-bold text-lg uppercase lg:text-2xl">Cars</h2>
-              <a className="text-[#87C121]">List More</a>
+              <a className="font-medium text-primary">List More</a>
             </nav>
             <div className="py-8">xxx</div>
           </div>
