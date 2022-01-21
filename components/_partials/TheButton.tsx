@@ -1,9 +1,9 @@
-export default function TheButton({ children, primary, secondary }: Props) {
+export default function TheButton({ children, dense, secondary }: Props) {
+  const variant = secondary ? "bg-secondary" : "bg-primary";
+  const padding = dense ? "" : "lg:py-4 lg:px-12";
   return (
     <button
-      className={`rounded font-bold text-sm text-white py-2 px-8 uppercase md:text-base lg:py-4 lg:px-12 hover:underline ${
-        secondary ? "bg-secondary" : "bg-primary"
-      }`}
+      className={`rounded font-bold text-sm text-white py-2 px-8 uppercase md:text-base hover:underline ${variant} ${padding}`}
     >
       {children}
     </button>
@@ -12,6 +12,6 @@ export default function TheButton({ children, primary, secondary }: Props) {
 
 interface Props {
   children: any;
-  primary?: boolean;
+  dense?: boolean;
   secondary?: boolean;
 }
