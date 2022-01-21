@@ -2,6 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import HomeTopNavigation from "../components/home/HomeTopNavigation";
 import TopNavigation from "../components/home/HomeTopNavigation";
+import TheButton from "../components/_partials/TheButton";
+import TheFooter from "../components/_partials/TheFooter";
 
 export default function HomePage() {
   return (
@@ -29,9 +31,7 @@ export default function HomePage() {
                 Bringing you our products and deals
               </div>
               <div>
-                <button className="bg-primary rounded font-bold text-sm text-white py-2 px-8 uppercase md:text-base lg:py-4 lg:px-12">
-                  List now
-                </button>
+                <TheButton>List now</TheButton>
               </div>
             </div>
           </header>
@@ -42,9 +42,7 @@ export default function HomePage() {
             className="bg-no-repeat bg-cover bg-fixed flex h-full p-8 justify-center items-end lg:p-24"
             style={{ backgroundImage: `url(/images/hero-bg.jpeg)` }}
           >
-            <button className="bg-primary rounded font-bold text-sm text-white py-2 px-8 uppercase md:text-base md:text-lg md:py-4 md:px-12">
-              Shop now
-            </button>
+            <TheButton>Shop now</TheButton>
           </section>
         </section>
 
@@ -52,27 +50,30 @@ export default function HomePage() {
           <div className="container mx-auto">
             <nav className="flex justify-between items-center">
               <h2 className="font-bold text-lg uppercase lg:text-2xl">Cars</h2>
-              <a className="font-medium text-primary">List More</a>
+              <a className="flex font-medium space-x-2 text-primary items-center">
+                <div>List More</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
             </nav>
-            <div className="py-8">xxx</div>
+            <div className="grid grid-cols-3 grid-colpy-8"></div>
           </div>
         </div>
       </main>
 
-      <footer className="border-t py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col space-y-4 text-center text-sm text-gray-800">
-            <div>
-              26A, Awori Road, Off Corporation Drive, Dolphine Estate, Ikoyi,
-              Lagos,Nigeria
-            </div>
-            <div>P:0809 800 5000</div>
-            <div>E: businesses@connectnigeria.com</div>
-
-            <div>social links here</div>
-          </div>
-        </div>
-      </footer>
+      <TheFooter />
     </div>
   );
 }
