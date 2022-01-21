@@ -1,8 +1,9 @@
 import Head from "next/head";
 import HomeHeroSection from "../components/homepage/HomeHeroSection";
 import HomeStepsListItems from "../components/homepage/HomeStepsListItems";
-import HomeTopNavigation from "../components/homepage/HomeTopNavigation";
 import TheFooter from "../components/_partials/TheFooter";
+import TheHeader from "../components/_partials/TheHeader";
+import TopNavigationBar from "../components/_partials/TopNavigationBar";
 
 export default function HomePage() {
   return (
@@ -14,7 +15,8 @@ export default function HomePage() {
       </Head>
 
       <header className="flex flex-col h-screen justify-between">
-        <HomeTopNavigation />
+        <TheHeader />
+        <TopNavigationBar />
         <HomeHeroSection />
       </header>
 
