@@ -1,0 +1,122 @@
+[
+  {
+    "name": "cars",
+    "slug": "#/cars",
+    "featured": {
+      "image": "/images/listings/010.jpeg",
+      "price": 2400000,
+      "name": "Foreign used Toyota",
+      "slug": "#"
+    },
+    "items": [
+      {
+        "image": "/images/listings/002.jpeg",
+        "price": 2400000,
+        "name": "Foreign used Toyota",
+        "slug": "#"
+      },
+      {
+        "image": "/images/listings/001.jpeg",
+        "price": 50002,
+        "name": "Brand New Toyota",
+        "slug": "#"
+      }
+    ]
+  },
+  {
+    "name": "deals",
+    "slug": "#/deals",
+    "featured": {
+      "image": "/images/listings/001.jpeg",
+      "price": 2400000,
+      "name": "5 Bedroom Duplex",
+      "slug": "#"
+    },
+    "items": [
+      {
+        "image": "/images/listings/001.jpeg",
+        "price": 20002,
+        "name": "Foreign used Toyota",
+        "slug": "#"
+      },
+      {
+        "image": "/images/listings/001.jpeg",
+        "price": 20002,
+        "name": "Foreign used Honda",
+        "slug": "#"
+      }
+    ]
+  },
+  {
+    "name": "real estate",
+    "slug": "#/real-estate",
+    "featured": {
+      "image": "/images/listings/004.jpeg",
+      "price": 20002,
+      "name": "5 Bedroom Duplex ",
+      "slug": "#"
+    },
+    "items": [
+      {
+        "image": "/images/listings/006.jpeg",
+        "price": 20002,
+        "name": "5 Bedroom Duplex ",
+        "slug": "#"
+      },
+      {
+        "image": "/images/listings/004.jpeg",
+        "price": 20002,
+        "name": "5 Bedroom Duplex ",
+        "slug": "#"
+      }
+    ]
+  },
+  {
+    "name": "events",
+    "slug": "/events",
+    "featured": {
+      "image": "/images/listings/009.jpeg",
+      "price": 20002,
+      "name": "Business Mixers",
+      "slug": "#"
+    },
+    "items": [
+      {
+        "image": "/images/listings/001.jpeg",
+        "price": 20002,
+        "name": "Business Mixers",
+        "slug": "#"
+      },
+      {
+        "image": "/images/listings/001.jpeg",
+        "price": 20202,
+        "name": "Business Mixers",
+        "slug": "#"
+      }
+    ]
+  },
+  {
+    "name": "businesses",
+    "slug": "#/businesses",
+    "featured": {
+      "image": "/images/listings/007.jpeg",
+      "price": 0,
+      "name": "Connect Nigeria",
+      "slug": "#"
+    },
+    "items": [
+      {
+        "image": "/images/listings/001.jpeg",
+        "price": 0,
+        "name": "Connect Nigeria",
+        "slug": "#"
+      },
+      {
+        "image": "/images/listings/001.jpeg",
+        "price": 0,
+        "name": "Connect Nigeria",
+        "slug": "#"
+      }
+    ]
+  }
+]

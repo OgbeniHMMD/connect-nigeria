@@ -21,12 +21,7 @@ export default function HomePage() {
         <HomeHeroSection />
       </header>
 
-      <section id="shopping">
-        <HomeShoppingSection white={true} />
-        <HomeShoppingSection />
-        <HomeShoppingSection white={true} />
-      </section>
-
+      <HomeShoppingSection />
       <HomeStepsListItems />
       <TheFooter />
     </main>
