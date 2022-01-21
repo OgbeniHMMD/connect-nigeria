@@ -1,9 +1,7 @@
 import Head from "next/head";
-import Link from "next/link";
-import HomeHeroSection from "../components/home/HomeHeroSection";
-import HomeStepsListItems from "../components/home/HomeStepsListItems";
-import HomeTopNavigation from "../components/home/HomeTopNavigation";
-import TheButton from "../components/_partials/TheButton";
+import HomeHeroSection from "../components/homepage/HomeHeroSection";
+import HomeStepsListItems from "../components/homepage/HomeStepsListItems";
+import HomeTopNavigation from "../components/homepage/HomeTopNavigation";
 import TheFooter from "../components/_partials/TheFooter";
 
 export default function HomePage() {
