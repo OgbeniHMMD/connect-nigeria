@@ -17,7 +17,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Proxima+Nova&display=swap"
           rel="stylesheet"
         />
       </Head>
