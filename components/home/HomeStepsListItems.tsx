@@ -9,7 +9,7 @@ export default function HomeStepsListItems() {
   return (
     <section className="bg-gray-100 py-8">
       <header className="bg-primary text-white md:text-lg">
-        <div className="container font-bold mx-auto text-center tracking-wide p-4 capitalize">
+        <div className="container font-bold mx-auto text-center tracking-wide p-4 py-6 capitalize">
           three steps to list your items on ConnectNigeria
         </div>
       </header>
@@ -18,7 +18,7 @@ export default function HomeStepsListItems() {
           {steps.map((step, i) => (
             <div key={i} className="max-w-sm py-8 md:py-16">
               <div className="border-primary rounded-full flex font-bold mx-auto border-4 h-20 text-primary text-3xl w-20 justify-center items-center">
-                1
+                {i + 1}
               </div>
               <div className="font-bold text-xl text-center pt-4">
                 Lorem ipsum dolor sit amet, consectetur
