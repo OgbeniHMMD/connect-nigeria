@@ -1,6 +1,7 @@
 import Head from "next/head";
 import HomeHeroSection from "../components/homepage/HomeHeroSection";
 import HomeStepsListItems from "../components/homepage/HomeStepsListItems";
+import TheButton from "../components/_partials/TheButton";
 import TheFooter from "../components/_partials/TheFooter";
 import TheHeader from "../components/_partials/TheHeader";
 import TopNavigationBar from "../components/_partials/TopNavigationBar";
@@ -24,7 +25,7 @@ export default function HomePage() {
         <div className="container mx-auto">
           <nav className="flex justify-between items-center">
             <h2 className="font-bold text-lg uppercase lg:text-2xl">Cars</h2>
-            <a className="flex font-medium space-x-2 text-primary items-center">
+            <a className="flex font-medium space-x-2 text-primary items-center hover:underline">
               <div>List More</div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +43,29 @@ export default function HomePage() {
               </svg>
             </a>
           </nav>
-          <div className="grid grid-cols-3 grid-colpy-8"></div>
+          <div className="flex space-x-8 py-8 justify-between">
+            <div className="border rounded-lg flex flex-col h-64 w-1/3 justify-between overflow-hidden">
+              <div className="text-right p-4 pr-0">
+                <button className="bg-primary font-bold text-white py-1 px-2 uppercase">
+                  featured
+                </button>
+              </div>
+              <div className="opacity-80">
+                <div className="bg-gradient-to-t from-black flex p-4 justify-between items-center">
+                  <div>
+                    <div className="font-medium pb-y text-lg text-white">
+                      Foreign used Toyota
+                    </div>
+                    <div className="font-bold text-primary"> ₦2,400,000</div>
+                  </div>
+                  <TheButton secondary={true}>buy now</TheButton>
+                </div>
+              </div>
+            </div>
+
+            <div className="border p-4 w-1/3">xx</div>
+            <div className="border p-4 w-1/3">xxx</div>
+          </div>
         </div>
       </section>
 
