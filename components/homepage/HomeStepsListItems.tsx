@@ -20,7 +20,7 @@ export default function HomeStepsListItems() {
               <div className="border-primary rounded-full flex font-bold mx-auto border-4 h-20 text-primary text-3xl w-20 justify-center items-center">
                 {i + 1}
               </div>
-              <div className="font-bold text-xl text-center pt-4">
+              <div className="font-bold text-lg text-center pt-4 md:text-xl lg:text-2xl">
                 Lorem ipsum dolor sit amet, consectetur
               </div>
             </div>
