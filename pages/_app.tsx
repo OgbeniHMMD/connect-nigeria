@@ -6,7 +6,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
       <Head>
-        <title>Impata</title>
+        <title>Bringing you our products and deals | ConnectNigeria</title>
         <meta name="description" content="ConnectNigeria.com bla bla bla" />
         <link rel="icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
