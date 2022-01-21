@@ -7,7 +7,7 @@ export default function HomeStepsListItems() {
     "Lorem dolor sit ipsum amet, consectetur",
   ];
   return (
-    <section className="bg-gray-100 py-8">
+    <section className="bg-gray-50 py-8">
       <header className="bg-primary text-white md:text-lg">
         <div className="container font-bold mx-auto text-center tracking-wide p-4 py-6 capitalize">
           three steps to list your items on ConnectNigeria

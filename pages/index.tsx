@@ -2,7 +2,6 @@ import Head from "next/head";
 import HomeHeroSection from "../components/homepage/HomeHeroSection";
 import HomeShoppingSection from "../components/homepage/HomeShoppingSections";
 import HomeStepsListItems from "../components/homepage/HomeStepsListItems";
-import TheButton from "../components/_partials/TheButton";
 import TheFooter from "../components/_partials/TheFooter";
 import TheHeader from "../components/_partials/TheHeader";
 import TopNavigationBar from "../components/_partials/TopNavigationBar";
@@ -22,7 +21,12 @@ export default function HomePage() {
         <HomeHeroSection />
       </header>
 
-      <HomeShoppingSection />
+      <section id="shopping">
+        <HomeShoppingSection white={true} />
+        <HomeShoppingSection />
+        <HomeShoppingSection white={true} />
+      </section>
+
       <HomeStepsListItems />
       <TheFooter />
     </main>
