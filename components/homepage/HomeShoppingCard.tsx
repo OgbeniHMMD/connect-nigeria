@@ -9,8 +9,12 @@ export default function HomeShpopingCard({ name, price, slug, image }: Items) {
       />
       <div className="pt-2">
         <div className="font-medium text-lg pb-1 text-gray-900 ">{name}</div>
-        <div className={`font-bold text-xl pb-2 !!price ? 'text-primary' : ''`}>
-          {!!price ? `₦${price.toLocaleString()}` : "N/A"}
+        <div
+          className={`font-bold text-xl pb-2 ${
+            price > 0 ? "text-primary" : ""
+          }`}
+        >
+          {price > 0 ? `₦${price.toLocaleString()}` : "N/A"}
         </div>
         <TheButton secondary={true} dense={true} mobileWide={true}>
           buy now
@@ -36,10 +40,8 @@ export function HomeFeaturedShoppingCard({ name, price, slug, image }: Items) {
         <div className="bg-gradient-to-t from-black flex space-x-2 p-4 justify-between items-center">
           <div>
             <div className="font-medium text-white pb-1 md:text-lg">{name}</div>
-            <div
-              className={`font-bold text-xl pb-2 !!price ? 'text-primary' : ''`}
-            >
-              {!!price ? `₦${price.toLocaleString()}` : "N/A"}
+            <div className={`font-bold text-xl pb-2 text-primary`}>
+              {price > 0 ? `₦${price.toLocaleString()}` : "N/A"}
             </div>
           </div>
           <TheButton secondary={true} dense={true}>
